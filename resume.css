@@ -1,176 +1,24 @@
-body {
-    margin: 4px;
-    padding: 4px;
-}
-
 .MainContainer{
-    display: grid;
-    grid-gap: 5px;
-    max-width: 1200vh;
-    min-width: 150vh;
-    max-height: 50%;
-    grid-template-rows: minmax(0.3fr,0.5fr) minmax(0.3fr,0.5fr) minmax(1fr,1fr) minmax(1fr,1fr) minmax(1fr,1fr);
-    grid-template-columns: 1fr 1fr 1fr;
-    border: 2px solid black;
-    grid-gap: 2px;
-    text-shadow:1px;
-    grid-template-areas:
-    "myName1 myName1 myName1"
-    "myName1 myName1 myName1"
-    "skill4 phone2 email3"
-    "skill4 experience7 experience7"
-    "awards8 education8 education8"
-    ;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    border: 2px;
-    margin: 10px;
-    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-#myName1{
-    grid-area:myName1 ;
-    appearance: none;
-    background-color: #29a292;
-    border: 1px solid rgba(27, 31, 35, .15);
-    border-radius: 6px;
-    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 40px;
-    padding: 6px 16px;
+.Bio,.Contact{
+    display: flex;
     position: relative;
+    justify-content: center;
     text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: middle;
-    white-space: nowrap;
-
-}
-#phone2{
-    background-color: rgb(17, 51, 74);
-    grid-area: phone2;
-
-}
-#email3{
-    background-color: rgb(146, 180, 203);
-    grid-area: email3;
 }
 
-
-#skill4{
-    background-color: rgb(64, 83, 96);
-    grid-area: skill4
-    
-
-}
-#skilllist5{
+.Header{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content:flex-start;
     text-align: left;
+    top:2em;
 }
 
-#experience6{
-    background-color: rgb(126, 152, 170);
-    grid-area: experience7;
-
-}
-
-#education8{
-    background-color: rgb(72, 160, 219);
-    grid-area: education8;
-
-}
-#awards8{
-    background-color: rgb(72, 160, 219);
-    grid-area: awards8;
-
-}
-
-
-
-
-
-.button-3 {
-    
-  appearance: none;
-  background-color: #2ea44f;
-  border: 1px solid rgba(27, 31, 35, .15);
-  border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  padding: 6px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  white-space: nowrap;
-  grid-area: but;
-}
-
-.button-3:focus:not(:focus-visible):not(.focus-visible) {
-  box-shadow: none;
-  outline: none;
-}
-
-.button-3:hover {
-  background-color: #2c974b;
-}
-
-.button-3:focus {
-  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
-  outline: none;
-}
-
-.button-3:disabled {
-  background-color: #94d3a2;
-  border-color: rgba(27, 31, 35, .1);
-  color: rgba(255, 255, 255, .8);
-  cursor: default;
-}
-
-.button-3:active {
-  background-color: #298e46;
-  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
-}
-
-/* .button-3{
-    position: fixed;
-    top: 35px;
-    left: 1050px;} */
-
-@media only screen and (max-width:550px){
-    .MainContainer{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-        "myName1"
-        "button" 
-        "phone2"
-        "email3"
-        "skill4"
-        "experience7"
-        "education8"
-        "awards8"
-
-
-
-        ;
-    }
-    
+a{
+    position: relative;
+    top: -32em;
+    left: 40em;
 }
