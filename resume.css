@@ -15,10 +15,11 @@
     justify-content:flex-start;
     text-align: left;
     top:2em;
+    padding: 4em;
 }
 
 a{
     position: relative;
-    top: -32em;
-    left: 40em;
+    top: -55em;
+    left: 35em;
 }
