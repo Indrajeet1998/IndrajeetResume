@@ -1,7 +1,12 @@
+
+
+
 .MainContainer{
     font-family: Arial, Helvetica, sans-serif;
     max-width: 100%;
     max-height: 100%;
+    top: 4em;
+    
 }
 .Bio,.Contact{
     display: flex;
@@ -12,16 +17,21 @@
 
 .Header{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
     justify-content:flex-start;
     text-align: left;
-    top:2em;
-    padding: 4em;
+    top:1em;
+    padding: 2em;
+}
+ul,li{
+    margin: 0;
+    padding: 0.2em;
+    list-style: none;
 }
 
+
 a{
-    position: relative;
-    top: -55em;
-    left: 35em;
-}
+    display: flex;
+    justify-content: center; /* Align content to the right */
+  }
